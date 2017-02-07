@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "FXKeyboardInputView.h"
 
 @interface ViewController ()
+
+@property (nonatomic, strong) FXKeyboardInputView *keyboardInputView;
 
 @end
 
@@ -17,6 +20,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    self.keyboardInputView = [FXKeyboardInputView viewFromBundle];
+    
+    [self.keyboardInputView setPlaceHolderString:@"aa"];
+    
+    
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    //点击屏幕弹出
+    [self.keyboardInputView showInWindow:self.view.window];
 }
 
 

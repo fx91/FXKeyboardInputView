@@ -13,6 +13,8 @@
 		E708CC781E49BEC200DDA1FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E708CC761E49BEC200DDA1FB /* Main.storyboard */; };
 		E708CC7A1E49BEC200DDA1FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E708CC791E49BEC200DDA1FB /* Assets.xcassets */; };
 		E708CC7D1E49BEC200DDA1FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E708CC7B1E49BEC200DDA1FB /* LaunchScreen.storyboard */; };
+		E708CC881E49BF3D00DDA1FB /* FXKeyboardInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = E708CC861E49BF3D00DDA1FB /* FXKeyboardInputView.m */; };
+		E708CC891E49BF3D00DDA1FB /* FXKeyboardInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E708CC871E49BF3D00DDA1FB /* FXKeyboardInputView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,9 @@
 		E708CC791E49BEC200DDA1FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E708CC7C1E49BEC200DDA1FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E708CC7E1E49BEC200DDA1FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E708CC851E49BF3D00DDA1FB /* FXKeyboardInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXKeyboardInputView.h; sourceTree = "<group>"; };
+		E708CC861E49BF3D00DDA1FB /* FXKeyboardInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXKeyboardInputView.m; sourceTree = "<group>"; };
+		E708CC871E49BF3D00DDA1FB /* FXKeyboardInputView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FXKeyboardInputView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +63,7 @@
 		E708CC6C1E49BEC200DDA1FB /* FXKeyboardInputView */ = {
 			isa = PBXGroup;
 			children = (
+				E708CC841E49BF3D00DDA1FB /* KeyboradView */,
 				E708CC701E49BEC200DDA1FB /* AppDelegate.h */,
 				E708CC711E49BEC200DDA1FB /* AppDelegate.m */,
 				E708CC731E49BEC200DDA1FB /* ViewController.h */,
@@ -77,6 +83,16 @@
 				E708CC6E1E49BEC200DDA1FB /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E708CC841E49BF3D00DDA1FB /* KeyboradView */ = {
+			isa = PBXGroup;
+			children = (
+				E708CC851E49BF3D00DDA1FB /* FXKeyboardInputView.h */,
+				E708CC861E49BF3D00DDA1FB /* FXKeyboardInputView.m */,
+				E708CC871E49BF3D00DDA1FB /* FXKeyboardInputView.xib */,
+			);
+			path = KeyboradView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +156,7 @@
 			files = (
 				E708CC7D1E49BEC200DDA1FB /* LaunchScreen.storyboard in Resources */,
 				E708CC7A1E49BEC200DDA1FB /* Assets.xcassets in Resources */,
+				E708CC891E49BF3D00DDA1FB /* FXKeyboardInputView.xib in Resources */,
 				E708CC781E49BEC200DDA1FB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -153,6 +170,7 @@
 			files = (
 				E708CC751E49BEC200DDA1FB /* ViewController.m in Sources */,
 				E708CC721E49BEC200DDA1FB /* AppDelegate.m in Sources */,
+				E708CC881E49BF3D00DDA1FB /* FXKeyboardInputView.m in Sources */,
 				E708CC6F1E49BEC200DDA1FB /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
